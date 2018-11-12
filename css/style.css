@@ -1,0 +1,183 @@
+:root {
+	--deep-purple: #700090;
+	--periwinkle: #4da6ff;
+	--light-grey: #f2f2f2;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 15px;
+	margin: 0;
+} 
+
+.content {
+	margin: 0 auto;
+	padding: 0 2em;
+	max-width: 1000px;
+}
+
+h1, h2 {
+	font-family: 'Montserrat', sans-serif;
+	text-transform: uppercase;
+	margin: 20px 0;
+}
+
+h2 {
+	font-weight: 400;
+}
+
+h3 {
+	font-weight: 600;
+	margin: 1em 0;
+}
+
+a {
+	color: var(--deep-purple);
+	font-weight: 600;
+	text-decoration:none;
+}
+
+a:hover {
+	color: var(--periwinkle);
+}
+
+p {
+	margin: 20px 0;
+}
+
+nav {
+	float: right;
+	margin-top: 28px;
+}
+
+nav a {
+	font-size: 18px;
+	margin-left: 1em;
+} 
+
+header {
+	border-bottom: 3px solid var(--deep-purple);
+	margin-bottom: 2em;
+	overflow: hidden;
+}
+
+img {
+	display: block;
+	margin: 0 auto;
+	max-width: 100%;
+}
+
+.name {
+	float: left;	
+}
+
+.name a, .name a:hover {
+	color: black;
+}
+
+section.projects { 
+	background-color: var(--light-grey);
+	margin: 20px 0;
+	padding: 20px 0;
+} 
+
+.skills, .projects, .contact {
+	overflow: hidden;
+}
+
+.skill-col {
+	float: left;
+	width: 25%;
+}
+
+.skill-col ul {
+	margin: 20px 0;
+	padding-left: 0;
+	padding-right: 1em;
+}
+
+.skill-col li { 
+	list-style-type: none;
+	padding-left: 25px;
+	position: relative;
+} 
+
+.skill-col li:before {
+	position:absolute;
+	top: 0.8em;
+	left: 0;
+	font-family: FontAwesome;
+	font-size: 0.5em;
+	color: var(--deep-purple);
+	content: "\f0c8";
+}
+
+.project-col {
+	float:left;
+	width: 33%;
+}
+
+.project-container {
+	padding: 0 1em;
+	text-align: center;
+}
+
+.project-container img {
+	margin-top: 20px;
+	max-width: 280px;
+}
+
+.project-container img:hover {
+	opacity: 0.7;
+}
+
+.img-caption {
+	font-size: 0.9em;
+	font-style: italic;
+	color: #666;
+	text-align: center;
+}
+
+img.max-width-400 {
+	max-width: 400px;
+}
+
+@media only screen and (max-width: 800px) {
+    .skill-col {
+            width: 50%;
+    }
+
+    .project-col {
+		width: 100%;
+	}
+}
+
+@media only screen and (max-width: 450px) {
+	.name {
+		float: none;
+	}
+
+	nav {
+		float: none;
+		margin: 1em 0;
+	}
+
+	nav a {
+		margin-left: 0;
+		margin-right: 1em;
+	}
+
+	.skill-col {
+		width: 100%;
+	}
+}
+
+footer {
+	border-top: 3px solid var(--deep-purple);
+	margin: 2em 0;
+}
+
+footer div {
+	margin: 20px;
+	text-align: center;
+}

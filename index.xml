@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Fiona Tran - Human Factors and UX Consultant</title>
+    <link>/</link>
+    <description>Recent content on Fiona Tran - Human Factors and UX Consultant</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 14 Oct 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Medical Device Programmer</title>
+      <link>/project/medical-device-programmer/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/project/medical-device-programmer/</guid>
+      <description>I am helping design the interface for medical device programming software, generating prototypes and design specifications, then conducting formative and summative usability testing and design verification. My goal is to ensure minimal safety risks to the patient and clinicians, and that the product complies with the IEC 62366-1:2015 standard and FDA guidance on human factors and usability engineering for medical devices.
+This product has not been launched yet, so while I cannot show details on the project, below is my general workflow:</description>
+    </item>
+    
+    <item>
+      <title>Wide-Area Monitoring</title>
+      <link>/project/wide-area-monitoring/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/project/wide-area-monitoring/</guid>
+      <description>Problem Electrical power grid operation is growing in complexity, and the threat of catastrophic outages has led to new regulatory standards requiring that power grid operators have wide-area views of the grid.
+I designed and evaluated wide-area visualizations to help operators monitor wide areas of the North American power grid, both within and outside of their own jurisdictions.
+Impact Working with end users, IT developers, senior management, and a fellow human factors researcher, I recommended UX improvements to the industry partner, conducted a work analysis, and set up the foundation for their operational human performance initiative.</description>
+    </item>
+    
+    <item>
+      <title>COPD Management App</title>
+      <link>/project/copd-management/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/project/copd-management/</guid>
+      <description>Problem Chronic obstructive pulmonary disease (COPD) is a group of respiratory diseases that cause airflow blockage and breathing-related problems. Allowing COPD patients to self-manage their disease can reduce hospital admissions and emergency department visits.
+I helped develop a mobile application called breatheAgain to help Chronic Obstructive Pulmonary Disorder (COPD) patients manage their disease. In a team of 4, we conducted an operating experience review, functional analysis, and hierarchical task analysis before developing low- and high-fidelity prototypes.</description>
+    </item>
+    
+    <item>
+      <title>About me</title>
+      <link>/about/</link>
+      <pubDate>Sun, 14 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/about/</guid>
+      <description>I&amp;rsquo;m a human factors and UX consultant with a passion for designing products for usability and ensuring that new and existing products meet regulatory standards.</description>
+    </item>
+    
+  </channel>
+</rss>
