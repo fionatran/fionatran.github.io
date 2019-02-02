@@ -29,6 +29,10 @@ h1, h2 {
 	margin: 20px 0;
 }
 
+h1 {
+	font-size: 30px;
+}
+
 h2 {
 	font-weight: 400;
 }
@@ -39,12 +43,14 @@ h3 {
 }
 
 a {
+	color: #700090;
 	color: var(--deep-purple);
 	font-weight: 600;
 	text-decoration:none;
 }
 
 a:hover {
+	color: #4da6ff;
 	color: var(--periwinkle);
 }
 
@@ -54,16 +60,44 @@ p {
 
 nav {
 	float: right;
-	margin-top: 28px;
+	font-size: 18px;
+	margin-top: 20px;
 }
 
-nav a {
-	font-size: 18px;
-	margin-left: 1em;
+nav ul {
+	margin: 0px;
+}
+
+nav li { 
+	display: inline-block;
+	list-style-type: none;
+	margin-left: 0.5em;
 } 
 
+nav li a {
+	display: inline-block;
+	padding: 6px;
+}
+
+nav li .icon {
+	font-family: FontAwesome;
+	font-size: 1em;
+	color: #700090;
+	color: var(--deep-purple);
+	padding-right: 0.25em;
+}
+
+nav li:hover, nav li a:hover {
+	background-color: #f2f2f2;
+	background-color: var(--light-grey);
+	color: #700090;
+	color: var(--deep-purple);
+}
+
 header {
-	border-bottom: 3px solid var(--deep-purple);
+	border-bottom: 3px solid;
+	border-color: #700090;
+	border-color: var(--deep-purple);
 	margin-bottom: 2em;
 	overflow: hidden;
 }
@@ -83,6 +117,7 @@ img {
 }
 
 section.projects { 
+	background-color: #f2f2f2;
 	background-color: var(--light-grey);
 	margin: 20px 0;
 	padding: 20px 0;
@@ -115,6 +150,7 @@ section.projects {
 	left: 0;
 	font-family: FontAwesome;
 	font-size: 0.5em;
+	color: #700090;
 	color: var(--deep-purple);
 	content: "\f0c8";
 	text-rendering: optimizeLegibility;
@@ -182,7 +218,9 @@ img.max-width-400 {
 }
 
 footer {
-	border-top: 3px solid var(--deep-purple);
+	border-top: 3px solid;
+	border-top-color: #700090;
+	border-top-color: var(--deep-purple);
 	margin: 2em 0;
 }
 
