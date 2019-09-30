@@ -2,6 +2,7 @@
 	--deep-purple: #700090;
 	--periwinkle: #4da6ff;
 	--light-grey: #f2f2f2;
+	--super-light-grey: #f8f8f8;
 }
 
 @font-face {
@@ -117,6 +118,23 @@ nav li:hover, nav li a:hover {
 	color: var(--deep-purple);
 }
 
+.dropdown-container {
+	position: relative;
+	display: inline-block;
+}
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	min-width: 20em;
+	box-shadow: 0 3px 1px 0px rgba(0,0,0,.2);
+	z-index: 1;
+}
+
+.dropdown-container:hover .dropdown-content {
+	display: block;
+}
+
 section.projects { 
 	background-color: #f2f2f2;
 	background-color: var(--light-grey);
@@ -164,17 +182,36 @@ section.projects {
 }
 
 .project-container {
-	padding: 0 1em;
-	text-align: center;
+	padding: 1em;
+	margin-right: 0.5em;
 }
 
 .project-container img {
-	margin-top: 20px;
+	margin: 20px 0px 0px 0px;
 	max-width: 280px;
 }
 
-.project-container img:hover {
+.project-container:hover {
+	background-color: var(--super-light-grey);
+}
+
+.project-container:hover h3, .project-container:hover .more {
+	color: var(--periwinkle);
+}
+
+.project-container:hover img {
 	opacity: 0.7;
+}
+
+.project-container .description {
+	color: #000000;
+	color: black;
+	font-weight: 400;
+	text-decoration:none;
+}
+
+.project-container .more {
+	display: inline-block;
 }
 
 .img-caption {
@@ -195,6 +232,11 @@ img.max-width-400 {
 
     .project-col {
 		width: 100%;
+		text-align: center;
+	}
+
+	.project-col img {
+		margin: 0 auto;
 	}
 }
 

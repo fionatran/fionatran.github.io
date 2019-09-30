@@ -6,7 +6,6 @@
     <description>Recent content on Fiona Tran - Human Factors and UX Consultant</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 14 Oct 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
@@ -40,15 +39,6 @@ Impact Working with end users, IT developers, senior management, and a fellow hu
       <guid>/project/copd-management/</guid>
       <description>Problem Chronic obstructive pulmonary disease (COPD) is a group of respiratory diseases that cause airflow blockage and breathing-related problems. Allowing COPD patients to self-manage their disease can reduce hospital admissions and emergency department visits.
 I helped develop a mobile application called breatheAgain to help Chronic Obstructive Pulmonary Disorder (COPD) patients manage their disease. In a team of 4, we conducted an operating experience review, functional analysis, and hierarchical task analysis before developing low- and high-fidelity prototypes.</description>
-    </item>
-    
-    <item>
-      <title>About me</title>
-      <link>/about/</link>
-      <pubDate>Sun, 14 Oct 2018 00:00:00 +0000</pubDate>
-      
-      <guid>/about/</guid>
-      <description>I&amp;rsquo;m a human factors and UX designer with a passion for creating user-friendly interfaces and ensuring that new and existing products meet regulatory standards.</description>
     </item>
     
   </channel>
