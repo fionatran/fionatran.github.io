@@ -184,11 +184,12 @@ section.projects {
 .project-container {
 	padding: 1em;
 	margin-right: 0.5em;
+	text-align: center;
 }
 
 .project-container img {
-	margin: 20px 0px 0px 0px;
-	max-width: 280px;
+	margin: 20px auto 0px auto;
+	max-height: 160px;
 }
 
 .project-container:hover {
