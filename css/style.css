@@ -1,8 +1,8 @@
 :root {
 	--deep-purple: #700090;
-	--periwinkle: #4da6ff;
+	--periwinkle: #0070E0;
 	--light-grey: #f2f2f2;
-	--super-light-grey: #f8f8f8;
+	--super-light-grey: #f6f6f6;
 }
 
 @font-face {
@@ -15,7 +15,7 @@
 body {
 	font-family: 'Open Sans', sans-serif;
 	font-size: 15px;
-	margin: 0;
+	margin: 8em 0 0 0;
 } 
 
 .content {
@@ -60,11 +60,17 @@ p {
 }
 
 header {
+	background-color: #fff;
 	border-bottom: 3px solid;
 	border-color: #700090;
 	border-color: var(--deep-purple);
-	margin-bottom: 2em;
+	box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 8px 0 rgba(0,0,0,0.1);
 	overflow: hidden;
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	z-index: 1000;
 }
 
 img {
@@ -93,6 +99,8 @@ nav ul {
 }
 
 nav li { 
+	font-family: 'Montserrat', sans-serif;
+	text-transform: uppercase;
 	display: inline-block;
 	list-style-type: none;
 	margin-left: 0.5em;
@@ -100,7 +108,8 @@ nav li {
 
 nav li a {
 	display: inline-block;
-	padding: 6px;
+	font-weight: 400;
+	padding: 0.5em;
 }
 
 nav li .icon {
@@ -112,6 +121,7 @@ nav li .icon {
 }
 
 nav li:hover, nav li a:hover {
+	border-radius: 5px;
 	background-color: #f2f2f2;
 	background-color: var(--light-grey);
 	color: #700090;
@@ -193,6 +203,7 @@ section.projects {
 }
 
 .project-container:hover {
+	border-radius: 5px;
 	background-color: var(--super-light-grey);
 }
 
@@ -242,6 +253,10 @@ img.max-width-400 {
 }
 
 @media only screen and (max-width: 450px) {
+	body {
+		margin: 0;
+	}
+
 	.name {
 		float: none;
 	}
@@ -250,6 +265,12 @@ img.max-width-400 {
 		display: inline-block;
 		text-align: center;
 		width: 100%;
+	}
+
+	header {
+		box-shadow: none;
+		position: static;
+		margin-bottom: 1em;
 	}
 
 	nav {
