@@ -93,34 +93,46 @@ nav {
 	margin-top: 20px;
 }
 
-nav ul {
+nav ul, .social-media ul {
 	margin: 0;
 	padding: 0;
 }
 
-nav li { 
+nav li {
+	margin-left: 0.5em;
+}
+
+nav li, .social-media li { 
 	font-family: 'Montserrat', sans-serif;
 	text-transform: uppercase;
 	display: inline-block;
 	list-style-type: none;
-	margin-left: 0.5em;
 } 
 
 nav li a {
 	display: inline-block;
 	font-weight: 400;
-	padding: 0.5em;
+	padding: 10px;
+}
+
+.social-media li a {
+	font-size: 1.8em;
+	padding: 5px 8px;
+}
+
+.icon {
+	font-family: FontAwesome;
+	color: #700090;
+	color: var(--deep-purple);
 }
 
 nav li .icon {
-	font-family: FontAwesome;
 	font-size: 1em;
-	color: #700090;
-	color: var(--deep-purple);
 	padding-right: 0.25em;
 }
 
-nav li:hover, nav li a:hover {
+nav li:hover, nav li a:hover, .social-media li:hover, 
+.social-media li a:hover {
 	border-radius: 5px;
 	background-color: #f2f2f2;
 	background-color: var(--light-grey);
@@ -237,9 +249,31 @@ img.max-width-400 {
 	max-width: 400px;
 }
 
+footer {
+	border-top: 3px solid;
+	border-top-color: #700090;
+	border-top-color: var(--deep-purple);
+	margin-top: 2em;
+	padding: 20px 0;
+}
+
+footer .content {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+footer .copyright {
+	float: left;
+}
+
+footer .social-media {
+	float: right;
+}
+
 @media only screen and (max-width: 800px) {
     .skill-col {
-            width: 50%;
+    	width: 50%;
     }
 
     .project-col {
@@ -252,12 +286,12 @@ img.max-width-400 {
 	}
 }
 
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 550px) {
 	body {
 		margin: 0;
 	}
 
-	.name {
+	.name, nav, .copyright, .social-media {
 		float: none;
 	}
 
@@ -273,10 +307,6 @@ img.max-width-400 {
 		margin-bottom: 1em;
 	}
 
-	nav {
-		float: none;
-	}
-
 	nav ul {
 		margin: 1em auto;
 		text-align: center;
@@ -290,16 +320,4 @@ img.max-width-400 {
 	.skill-col {
 		width: 100%;
 	}
-}
-
-footer {
-	border-top: 3px solid;
-	border-top-color: #700090;
-	border-top-color: var(--deep-purple);
-	margin: 2em 0;
-}
-
-footer div {
-	margin: 20px;
-	text-align: center;
 }
