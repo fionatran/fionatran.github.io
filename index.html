@@ -3,7 +3,7 @@
 <head>
 	<meta name="generator" content="Hugo 0.49.2" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<title>Fiona Tran - Human Factors and UX Consultant</title>
+	<title>Fiona Tran - Human Factors and UX</title>
 	<link rel="icon" type="image/png" href="/images/favicon.png" />
 	<link rel="stylesheet" type="text/css" href="/css/style.css" />
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,600|Open+Sans:400,600" rel="stylesheet" /> 
@@ -12,11 +12,11 @@
 
 <header>
 	<div class="content">
-		<h1 class="name"><a href="/">Fiona Tran</a></h1>
+		<div class="name"><a href="/">Fiona Tran</a></div>
 		<nav>
 			<ul>
-				<li><a href="/"><span class="icon">&#xf015;</span>Home</a></li>
-				<li><a href="/#projects"><span class="icon">&#xf0b1;</span>Projects</a></li>
+				<li><a href="/">About</a></li>
+				<li><a href="/#projects">Projects</a></li>
 			</ul>
 		</nav>
 	</div>
@@ -28,63 +28,76 @@
  
 
 
-<section class="intro" id="intro">
+<section class="intro" id="intro" style="background-image: url('images/intro-bg.jpg');">
 	<div class="content">
-		
-			<p>I&rsquo;m a human factors and UX engineer. My passion is creating user-friendly interfaces and making sure they&rsquo;re safe and intuitive to use. I&rsquo;m currently a Senior Human Factors Design Engineer at Medtronic.</p>
+		<div class="intro-blurb-container">
+			
+				<p class="intro-headline">I'm a human factors and UX designer.</p>
 
-<p>My work has been applied to medical devices, information systems, hospital workflows, and the energy industry. I have an MASc in Industrial Engineering (Human Factors) and BASc in Engineering Science from the University of Toronto.</p>
+<p>My passion is creating user experiences that improve people&rsquo;s lives, and making sure that products are safe and intuitive to use. I&rsquo;ve worked on medical devices, information systems, hospitals, and control rooms. I&rsquo;m currently a senior human factors engineer at Medtronic.</p>
 
-		
+<div class="intro-contact">
+    <p>Let's get in touch:</p>
+    <ul>
+        <li><a href="https://www.linkedin.com/in/fftran/"><span class="icon">&#xf0e1;</span>LinkedIn</a></li>
+        <li><a href="https://twitter.com/fionaftran"><span class="icon">&#xf099;</span>Twitter</a></li>
+    </ul>
+</div>
+
+			
+		</div>
 	</div>
 </section>
 <section class="skills" id="skills">
 	<div class="content">
 		<h2>What I do</h2>
 		
-			<div class="skill-col">
-				<h3>User Research</h3>
-				<ul>
-<li>Interviews</li>
-<li>Focus groups</li>
-<li>Field studies</li>
-</ul>
+			<div class="skill-container">
+				<h3><span class="icon">&#xf0c0;</span>User Research</h3>
+				<div class="skill-blurb">
+					<p>I dig deep to learn about user needs, workflows, and expectations. I talk directly to users and system stakeholders in the system, and observe current-state workflows to get the full picture.</p>
 
+					<p class="tools">
+						<em>Tools/Methods used:</em>
+						Interviews, focus groups, field studies, surveys
+					</p>
+				</div>
 			</div>
 		
-			<div class="skill-col">
-				<h3>Analysis</h3>
-				<ul>
-<li>Task analysis</li>
-<li>Usability risk assessment</li>
-<li>User needs analysis</li>
-<li>Statistics (R)</li>
-<li>VBA for Excel</li>
-</ul>
+			<div class="skill-container">
+				<h3><span class="icon">&#xf1ec;</span>Analysis</h3>
+				<div class="skill-blurb">
+					<p>I turn all my user research into workflow assessments and stakeholder needs. I analyze quantitative data to find patterns and points for additional investigation. I list the user&rsquo;s tasks and potential use errors, then trace them to design requirements to mitigate safety risks. If it&rsquo;s a medical device, I make sure it complies with the IEC 62366 standard and FDA guidance on usability engineering.</p>
 
+					<p class="tools">
+						<em>Tools/Methods used:</em>
+						Task analysis, usability risk assessment, statistics (R), VBA for Excel
+					</p>
+				</div>
 			</div>
 		
-			<div class="skill-col">
-				<h3>Prototyping</h3>
-				<ul>
-<li>Wireframing</li>
-<li>Balsamiq</li>
-<li>Sketch</li>
-<li>Axure</li>
-<li>InVision</li>
-<li>Web development</li>
-</ul>
+			<div class="skill-container">
+				<h3><span class="icon">&#xf044;</span>Design</h3>
+				<div class="skill-blurb">
+					<p>I start with low-fidelity wireframes to illustrate concepts. As I iterate on those designs with end users and the development team, I move on to screen design and interactive prototypes. I document the UX design in design specifications. I make the occasional website too &mdash; I made this website template from scratch with HTML, CSS, and the Hugo static site generator.</p>
 
+					<p class="tools">
+						<em>Tools/Methods used:</em>
+						Sketch, Axure, InVision, Balsamiq, PHP, JavaScript/jQuery
+					</p>
+				</div>
 			</div>
 		
-			<div class="skill-col">
-				<h3>Evaluation</h3>
-				<ul>
-<li>Usability testing</li>
-<li>Heuristic evaluation</li>
-<li>Design verification</li>
-</ul>
+			<div class="skill-container">
+				<h3><span class="icon">&#xf0ae;</span>Evaluation</h3>
+				<div class="skill-blurb">
+					<p>Throughout design and development, I collect user feedback and observe user performance with the UX design as often as I can. Before launch (or regulatory submission), I test the system with users to make sure it&rsquo;s safe and intuitive for use. For smaller projects with no safety impact, I have facilitated expert review.</p>
 
+					<p class="tools">
+						<em>Tools/Methods used:</em>
+						Usability testing, heuristic evaluation, design verification
+					</p>
+				</div>
 			</div>
 		
 	</div>
@@ -95,36 +108,27 @@
 		
 			
 			<div class="project-col"><a href=/project/medical-device-programmer/><div class="project-container">
-				<h3>Medical Device Programmer</h3>
 				<img src="/images/programmer.svg" alt="(Medical Device Programmer project image)" \>
+				<h3>Medical Device Programmer</h3>
 				<p><span class="description">Programmer software for clinicians to check and control settings for implantable medical devices. </span><span class="more">See more &gt;</span></p>
 			</div></a></div>
 			
 		
 			
 			<div class="project-col"><a href=/project/wide-area-monitoring/><div class="project-container">
-				<h3>Wide-Area Monitoring</h3>
 				<img src="/images/power-transmission.svg" alt="(Wide-Area Monitoring project image)" \>
+				<h3>Wide-Area Monitoring</h3>
 				<p><span class="description">Electrical power grid visualizations to help operators monitor and manage wide areas of the North American power grid. </span><span class="more">See more &gt;</span></p>
 			</div></a></div>
 			
 		
 			
 			<div class="project-col"><a href=/project/copd-management/><div class="project-container">
-				<h3>COPD Management App</h3>
 				<img src="/images/copd-management.svg" alt="(COPD Management App project image)" \>
+				<h3>COPD Management App</h3>
 				<p><span class="description">A mobile app to help Chronic Obstructive Pulmonary Disorder (COPD) patients manage their disease. </span><span class="more">See more &gt;</span></p>
 			</div></a></div>
 			
-		
-	</div>
-</section>
-<section class="contact" id="contact">
-	<div class="content">
-		<h2>Contact me</h2>
-		
-			<p>I&rsquo;m happy to get in touch! Feel free to reach out on <a href="https://www.linkedin.com/in/fftran/">LinkedIn</a> and <a href="https://twitter.com/fionaftran">Twitter</a>.</p>
-
 		
 	</div>
 </section>
