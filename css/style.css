@@ -2,7 +2,6 @@
 	--deep-purple: #700090;
 	--periwinkle: #0070E0;
 	--light-grey: #f2f2f2;
-	--super-light-grey: #f6f6f6;
 }
 
 @font-face {
@@ -42,6 +41,7 @@ h2 {
 	font-size: 2em;
 	font-weight: 400;
 	margin-top: 1em;
+	text-align: center;
 }
 
 h3 {
@@ -72,12 +72,17 @@ header {
 	border-color: #700090;
 	border-color: var(--deep-purple);
 	box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 8px 0 rgba(0,0,0,0.1);
-	overflow: hidden;
 	position: fixed;
 	left: 0px;
 	top: 0px;
 	width: 100%;
 	z-index: 1000;
+}
+
+header .content, footer .content {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
 }
 
 img {
@@ -87,7 +92,6 @@ img {
 }
 
 .name {
-	float: left;
 	font-size: 30px;	
 }
 
@@ -96,9 +100,7 @@ img {
 }
 
 nav {
-	float: right;
 	font-size: 18px;
-	margin-top: 20px;
 }
 
 nav ul, .social-media ul {
@@ -134,6 +136,13 @@ nav li a {
 	color: var(--deep-purple);
 }
 
+a.anchor {
+	display: block;
+	position: relative;
+	top: -80px;
+	visibility: hidden;
+}
+
 .intro-contact .icon {
 	font-size: 1em;
 	padding-right: 0.5em;
@@ -155,20 +164,23 @@ nav li:hover, nav li a:hover,
 	background-size: cover;
 	height: 70%;
 	min-height: 500px;
-	position: relative;
 }
 
-.intro-blurb-container {
+.intro .content {
+	display: flex;
+	align-items: center;
+	height: 100%;
+}
+
+.intro-blurb-container, .project-card {
 	background-color: #fff;
 	border-radius: 5px;
 	box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 8px 0 rgba(0,0,0,0.1);
-	overflow: hidden;
+}
+
+.intro-blurb-container {
 	padding: 2em;
-	position: absolute;
-	top: 50%;
-	-ms-transform: translateY(-50%);
-	transform: translateY(-50%);
-	width: 40%;
+	width: 50%;
 }
 
 .intro-blurb-container p {
@@ -187,14 +199,12 @@ nav li:hover, nav li a:hover,
 
 .intro-contact p {
 	display: inline-block;
-	float: left;
 	padding-top: 3px;
+	vertical-align: top;
 }
 
 .intro-contact ul {
 	display: inline-block;
-	float: left;
-	clear: right;
 	margin: 0;
 	padding: 0;
 	list-style-type: none;
@@ -207,7 +217,6 @@ nav li:hover, nav li a:hover,
 
 .skills, .projects {
 	padding: 3em 0;
-	overflow: hidden;
 }
 
 .skills h2, .projects h2 {
@@ -221,21 +230,20 @@ nav li:hover, nav li a:hover,
 
 .skill-container {
 	margin-top: 2em;
-	overflow: hidden;
 }
 
-.skill-container h3, .skill-container .skill-blurb {
+.skill-container .skill-heading, .skill-container .skill-blurb {
 	display: inline-block;
-	float: left;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
+	vertical-align: top;
+}
+
+.skill-container .skill-heading {	
+	text-align: right;
+	width: 25%;
 }
 
 .skill-container h3 {
 	padding-right: 2em;
-	text-align: right;
-	width: 25%;
 }
 
 .skill-container .icon {
@@ -251,43 +259,48 @@ nav li:hover, nav li a:hover,
 	color: var(--periwinkle);
 }
 
-.project-col {
-	float:left;
+.project-container {
+	margin: 3em auto 0 auto;
+	max-width: 800px;
+}
+
+.project-card {
+	padding: 2em;
+}
+
+.project-card:hover {
+	box-shadow: 0 2px 12px 0 rgba(0,0,0,0.24), 0 2px 16px 0 rgba(0,0,0,0.1);
+}
+
+.project-card img, .project-card .project-text {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.project-card img {
 	width: 33%;
 }
 
-.project-container {
-	padding: 1em;
-	margin-right: 0.5em;
-	text-align: center;
+.project-card .project-text {
+	width: 67%;
 }
 
-.project-container img {
-	margin: 20px auto 0px auto;
-	max-height: 160px;
+.project-card h3, .project-card p {
+	padding-left: 36px;
 }
 
-.project-container:hover {
-	border-radius: 5px;
-	background-color: var(--super-light-grey);
+.project-card h3 {
+	margin-top: 0;
 }
 
-.project-container:hover h3, .project-container:hover .more {
-	color: var(--periwinkle);
-}
-
-.project-container:hover img {
-	opacity: 0.7;
-}
-
-.project-container .description {
+.project-card .description {
 	color: #000000;
 	color: black;
 	font-weight: 400;
 	text-decoration:none;
 }
 
-.project-container .more {
+.project-card .more {
 	display: inline-block;
 }
 
@@ -313,31 +326,16 @@ footer {
 	padding: 20px 0;
 }
 
-footer .content {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-}
+@media only screen and (max-width: 800px) {
+    .intro .content {
+    	justify-content: center;
+    }
 
-footer .copyright {
-	float: left;
-}
-
-footer .social-media {
-	float: right;
-}
-
-@media only screen and (max-width: 800px), screen and (max-height: 500px) {
     .intro-blurb-container {
-		left: 50%;
-		-ms-transform: translate(-50%, -50%);
-  		transform: translate(-50%, -50%);
 		width: 70%;
 	}
-}
 
-@media only screen and (max-width: 800px) {
-    .skill-container h3, .skill-container .skill-blurb {
+	.skill-container .skill-heading, .skill-container .skill-blurb {
     	width: 100%;
     }
 
@@ -346,20 +344,24 @@ footer .social-media {
     	text-align: left;
     }
 
-    .project-col {
-		width: 100%;
-	}
+    .project-card {
+    	text-align: center;
+    }
 
-	.project-col img {
-		margin: 0 auto;
-	}
-}
+    .project-card img {
+    	margin: 0 auto;
+    	width: 100%;
+    	max-width: 360px;
+    }
 
-@media only screen and (max-width: 550px), screen and (max-height: 400px) {
-	.intro {
-		clear: both;
-		padding: 20px 0;
-	}
+    .project-card .project-text {
+    	padding-top: 2em;
+    	width: 100%;
+    }
+
+    .project-card h3, .project-card p {
+    	padding: 0;
+    }
 }
 
 @media only screen and (max-width: 550px), screen and (max-height: 400px) {
@@ -378,12 +380,11 @@ footer .social-media {
 		margin: 0;
 	}
 
-	.name, nav, .copyright, .social-media {
-		float: none;
+	header .content, footer .content {
+		display: block;
 	}
 
-	.name, .copyright, .social-media {
-		display: inline-block;
+	.name, nav, .copyright, .social-media {
 		text-align: center;
 		width: 100%;
 	}
@@ -391,40 +392,27 @@ footer .social-media {
 	nav ul {
 		margin: 1em auto;
 		text-align: center;
-		width: 100%;
 	}
 
 	nav li {
 		margin: 0 0.25em;
 	}
 
-	footer .content {
-		display: block;
-	}
-
-	.social-media {
-		margin-top: 1em;
-	}
-}
-
-@media only screen and (max-width: 300px) {
 	.intro {
+		padding: 2em 0;
 		height: auto;
+		min-height: 0;
+	}
+
+	.intro .content {
+		align-items: stretch;
 	}
 
 	.intro-blurb-container {
-		background: none;
-		box-shadow: none;
-		position: relative;
-		top: 0;
-		left: 0;
-		-ms-transform: translate (0, 0);
-		transform: translate(0, 0);
 		width: 100%;
-		padding: 2em 0;
 	}
 
-	.intro[style] {
-		background: none !important;
+	.social-media {
+		margin: 1em 0;
 	}
 }
