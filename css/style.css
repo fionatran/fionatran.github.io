@@ -160,14 +160,14 @@ nav li:hover, nav li a:hover,
 
 .intro {
 	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
+	background-size: contain;
 	height: 70%;
 	min-height: 500px;
 }
 
 .intro .content {
 	display: flex;
+	justify-content: center;
 	align-items: center;
 	height: 100%;
 }
@@ -215,15 +215,15 @@ nav li:hover, nav li a:hover,
 	padding: 3px 10px;
 }
 
-.skills, .projects {
+.skills, .work {
 	padding: 3em 0;
 }
 
-.skills h2, .projects h2 {
+.skills h2, .work h2 {
 	margin: 0;
 }
 
-.projects { 
+.work { 
 	background-color: #f2f2f2;
 	background-color: var(--light-grey);
 } 
