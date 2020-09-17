@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-	<meta name="description" content="I'm a human factors and UX designer making user experiences that improve people's lives. My passion is developing products that are safe and easy to use." />
+	<meta name="description" content="I'm a UX researcher and designer creating user experiences that improve people's lives, and developing products that are safe and easy to use." />
 	<meta name="author" content="Fiona Tran" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<title>Wide-Area Monitoring</title>
@@ -55,9 +55,9 @@
 
 <h2 id="process">Process</h2>
 
-<h3 id="knowledge-elicitation">Knowledge Elicitation</h3>
+<h3 id="knowledge-gathering">Knowledge-Gathering</h3>
 
-<p>I conducted <strong>critical incident interviews</strong> with current power grid operators, in a format adapted from the Critical Incident Technique (Flanagan 1954). Questions focused on past incidents that operators experienced first-hand in the control room, with the goal of designing to avoid past pitfalls.</p>
+<p>I conducted <strong>critical incident interviews</strong> with 8 current power grid operators, in a format adapted from the Critical Incident Technique (Flanagan 1954). Questions focused on past incidents that operators experienced first-hand in the control room, with the goal of designing to avoid past pitfalls. A total of 22 past incidents were recounted, and 2 top recurring issues were data unobserved (4 incidents) and unclear consequences of an action (3 incidents).</p>
 
 <p>My colleague and I led <strong>focus group sessions</strong> with 6 crews of 7 operators each, where crews discussed past incidents while drawing from the experiences of the entire crew that dealt with the incident. At the end of the session, we handed out a <strong>questionnaire</strong> on control room ergonomics and software tool development.</p>
 
@@ -65,19 +65,33 @@
 
 <div class="img-caption">Compiled challenges from one focus group.</div>
 
-<p>Throughout this project, we did <strong>field observations</strong> in the control room over a period of 60+ non-consecutive days, to see how operators dealt with real-time events.</p>
+<p>Throughout this project, we did <strong>field studies</strong> in the control room over a period of 60+ non-consecutive days, to see how operators dealt with real-time events. The extensive knowledge-gathering process helped us understand operators&rsquo; workflows, their problem-solving methods, and usability issues that they face. The process also helped narrow the scope of my research to target the lack of wide-area monitoring visibility among operators&rsquo; tools.</p>
 
 <h3 id="analysis">Analysis</h3>
 
-<p>We analyzed our findings from knowledge elicitation (above), and documentation/literature review. We conducted a <strong>Work Domain Analysis</strong> (WDA) of power grid operations, which has been published as a chapter of <a href="https://www.crcpress.com/Cognitive-Work-Analysis-Applications-Extensions-and-Future-Directions/Stanton-Salmon-Walker-Jenkins/p/book/9781138749429">Cognitive Work Analysis: Applications, Extensions and Future Directions</a>.</p>
+<p>We analyzed our findings from the knowledge-gathering (above) in addition to a literature review. We conducted a <strong>Work Domain Analysis</strong> (WDA) of power grid operations, which has been published as a chapter of <a href="https://www.crcpress.com/Cognitive-Work-Analysis-Applications-Extensions-and-Future-Directions/Stanton-Salmon-Walker-Jenkins/p/book/9781138749429">Cognitive Work Analysis: Applications, Extensions and Future Directions</a>. The WDA was a way to map out functional relationships between different elements of the power grid, and at different levels of abstraction as operators manage the power grid.</p>
 
-<p>I used the WDA to develop <strong>information requirements</strong> for designing wide-area monitoring visualizations for power grid operation.</p>
+<p><img src="/images/wda-diagram.png" alt="Work Domain Analysis of power grid operations" /></p>
+
+<div class="img-caption">Abstraction hierarchy of power grid operations, part of the Work Domain Analysis (WDA).</div>
+
+<p>I used the WDA to develop <strong>information requirements</strong> for designing wide-area monitoring visualizations for power grid operation. These information requirements included what measures operators could use to control a particular element, and what the operating constraints were for those measures.</p>
 
 <h3 id="design-and-validation">Design and Validation</h3>
 
-<p>I made <strong>low-fidelity sketches</strong> using those information requirements, then conducted informal <strong>tabletop feedback</strong> discussions with 4 operators individually. They provided feedback and information on their information needs, so that I could iterate on those low-fidelity sketches.</p>
+<p>I translated the information requirements to <strong>low-fidelity wireframes</strong>, then conducted informal <strong>tabletop feedback</strong> discussions with 4 operators individually. They provided feedback on the preliminary concepts and details on their information needs, so that I could iterate on those wireframes.</p>
 
-<p>I then developed <strong>high-fidelity prototypes</strong>. I conducted a <strong>usability evaluation</strong> where operators answered 11 task questions based on the information in the displays. They then provided open-ended feedback on what they liked about the design and what could be improved. The usability evaluation ended with a questionnaire, including questions from the System Usability Scale.</p>
+<p><img src="/images/wam-prelim-concepts.png" alt="Preliminary wireframes for a wide-area monitoring display" /></p>
+
+<div class="img-caption">Preliminary concepts for a wide-area monitoring display.</div>
+
+<p>I then developed <strong>high-fidelity prototypes</strong>. I conducted <strong>usability testing</strong> where operators answered 11 task questions based on the information in the displays. They then provided open-ended feedback on what they liked about the design and what could be improved. The usability testing ended with a questionnaire, including questions from the System Usability Scale (SUS).</p>
+
+<p><img src="/images/wam-wide-area-view.png" alt="Wide-area view of the high-fidelity wide area monitoring prototype" /></p>
+
+<div class="img-caption">One of the views in the high-fidelity prototype, for the wide-area power grid across multiple jurisdictions. The design had been iterated on after 2 rounds of feedback and usability testing.</div>
+
+<p>Nine out of the 11 task questions were correctly answered by most participants on their first time seeing the prototype and without training on the design. A few design changes were made in the final iteration of the prototype to improve the ease of navigation and to meet the technical constraints of existing mathematical models. The prototype earned a mean SUS score of 77/90 (<em>SD</em> = 7), normalized to 86/100. (A SUS question on integration into a system was not applicable to this prototype, and was removed from the questionnaire.) Participants liked that the displays consolidated information that had been spread out across separate screens in their current software user interface. They believed that they could detect problems with the power grid more quickly with the new interface compared to their existing tools.</p>
 
 <h2 id="publications">Publications</h2>
 
