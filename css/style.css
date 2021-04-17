@@ -3,6 +3,7 @@
 	--cobalt: #074DC6;
 	--periwinkle: #0076E4;
 	--azure: #0097E9;
+	--cerulean: #00B3D9;
 	--turquoise: #00CCBE;
 	--light-grey: #F2F2F2;
 }
@@ -27,7 +28,7 @@ body {
 section .content {
 	margin: 0 auto;
 	padding: 0 2em;
-	max-width: 800px;
+	max-width: 980px;
 }
 
 h1, h2, .name {
@@ -132,7 +133,7 @@ img {
 }
 
 nav {
-	font-size: 18px;
+	font-size: 1em;
 }
 
 nav ul, .social-media ul {
@@ -184,17 +185,17 @@ a.anchor {
 	padding-right: 0.5em;
 }
 
-nav li a:hover, .intro-contact li a:hover,
-.social-media li a:hover {
-	border-radius: 5px;
+nav li a:hover, .social-media li a:hover {
 	color: #0076E4;
 	color: var(--periwinkle);
 }
 
 .intro {
 	background-attachment: fixed;
+	background-color: #0097E9;
+	background-color: var(--azure);
 	background-position: center;
-	background-size: 600px;
+	background-size: 600px, cover;
 	height: 70%;
 	min-height: 500px;
 }
@@ -208,13 +209,13 @@ nav li a:hover, .intro-contact li a:hover,
 
 .intro-blurb-container, .project-card {
 	background-color: #fff;
-	border-radius: 5px;
+	border-radius: 16px;
 	box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 8px 0 rgba(0,0,0,0.1);
 }
 
 .intro-blurb-container {
-	padding: 2em;
-	width: 66%;
+	padding: 2em 3em;
+	width: 60%;
 }
 
 .intro-blurb-container p {
@@ -343,7 +344,7 @@ nav li a:hover, .intro-contact li a:hover,
 }
 
 section .work-content {
-	padding: 1em 0;
+	padding: 1em;
 }
 
 .breadcrumb {
@@ -447,6 +448,7 @@ footer {
 
 @media only screen and (max-width: 550px) {
 	body {
+		font-size: 16px;
 		margin: 0;
 	}
 
@@ -485,6 +487,7 @@ footer {
 	}
 
 	.intro-blurb-container {
+		padding: 2em;
 		width: 100%;
 	}
 
