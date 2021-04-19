@@ -9,10 +9,23 @@
 }
 
 @font-face {
-	font-family: "FontAwesome";
+	font-family: 'FontAwesome Brands';
 	font-weight: 900;
 	font-display: auto;
-	src: url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.woff2") format("woff2");
+	src: url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/webfonts/fa-brands-400.eot'),; /* IE9 */
+	src: url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/webfonts/fa-brands-400.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+		url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/webfonts/fa-brands-400.woff2') format('woff2'),
+		url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/webfonts/fa-brands-400.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'FontAwesome Regular';
+	font-weight: 900;
+	font-display: auto;
+	src: url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/webfonts/fa-regular-400.eot'),; /* IE9 */
+	src: url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/webfonts/fa-regular-400.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+		url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/webfonts/fa-regular-400.woff2') format('woff2'),
+		url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/webfonts/fa-regular-400.ttf') format('truetype');
 }
 
 html, body {
@@ -56,7 +69,7 @@ h3 {
 	font-weight: 600;
 }
 
-a, .project-card h3 span, .anim-underline .icon {
+a, .project-card h3 span, .intro-contact .icon {
 	color: #074DC6;
 	color: var(--cobalt);
 	font-weight: 600;
@@ -136,7 +149,7 @@ nav {
 	font-size: 1em;
 }
 
-nav ul, .social-media ul {
+nav ul, footer .social-media ul {
 	margin: 0;
 	padding: 0;
 }
@@ -145,7 +158,7 @@ nav li {
 	margin-left: 0.5em;
 }
 
-nav li, .social-media li { 
+nav li, footer .social-media li { 
 	font-family: 'Montserrat', sans-serif;
 	text-transform: uppercase;
 	display: inline-block;
@@ -164,13 +177,13 @@ nav li a, .icon {
 	color: var(--deep-purple);
 }
 
-.social-media li a {
+footer .social-media li a {
 	font-size: 1.8em;
 	padding: 5px 8px;
 }
 
-.icon {
-	font-family: FontAwesome;
+.social-media .icon {
+	font-family: 'FontAwesome Brands';
 }
 
 a.anchor {
@@ -185,7 +198,7 @@ a.anchor {
 	padding-right: 0.5em;
 }
 
-nav li a:hover, .social-media li a:hover {
+nav li a:hover, footer .social-media li a:hover {
 	color: #0076E4;
 	color: var(--periwinkle);
 }
@@ -257,6 +270,10 @@ nav li a:hover, .social-media li a:hover {
 
 .skills {
 	box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 8px 0 rgba(0,0,0,0.1);
+}
+
+.skills .icon {
+	font-family: 'FontAwesome Regular';
 }
 
 .skills, .work {
@@ -456,7 +473,7 @@ footer {
 		display: block;
 	}
 
-	.name, nav, .copyright, .social-media {
+	.name, nav, .copyright, footer .social-media {
 		text-align: center;
 		width: 100%;
 	}
@@ -491,7 +508,7 @@ footer {
 		width: 100%;
 	}
 
-	.social-media {
+	footer .social-media {
 		margin: 1em 0;
 	}
 }
