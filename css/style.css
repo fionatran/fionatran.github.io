@@ -1,0 +1,514 @@
+:root {
+	--deep-purple: #700090;
+	--cobalt: #074DC6;
+	--periwinkle: #0076E4;
+	--azure: #0097E9;
+	--cerulean: #00B3D9;
+	--turquoise: #00CCBE;
+	--light-grey: #F2F2F2;
+}
+
+@font-face {
+	font-family: 'FontAwesome Brands';
+	font-weight: 900;
+	font-display: auto;
+	src: url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/webfonts/fa-brands-400.eot'),; /* IE9 */
+	src: url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/webfonts/fa-brands-400.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+		url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/webfonts/fa-brands-400.woff2') format('woff2'),
+		url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/webfonts/fa-brands-400.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'FontAwesome Regular';
+	font-weight: 900;
+	font-display: auto;
+	src: url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/webfonts/fa-regular-400.eot'),; /* IE9 */
+	src: url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/webfonts/fa-regular-400.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+		url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/webfonts/fa-regular-400.woff2') format('woff2'),
+		url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/webfonts/fa-regular-400.ttf') format('truetype');
+}
+
+html, body {
+	height: 100%;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 18px;
+	margin: 80px 0 0 0;
+} 
+
+section .content {
+	margin: 0 auto;
+	padding: 0 2em;
+	max-width: 980px;
+}
+
+h1, h2, .name {
+	font-family: 'Montserrat', sans-serif;
+	text-transform: uppercase;
+}
+
+h1, h2, h3 {
+	margin: 1em 0 0.5em 0;
+}
+
+h1 {
+	font-size: 2.5em;
+}
+
+h2 {
+	font-size: 2em;
+	font-weight: 400;
+	margin-top: 1em;
+	text-align: center;
+}
+
+h3 {
+	font-size: 1.2em;
+	font-weight: 600;
+}
+
+a, .project-card h3 span, .intro-contact .icon {
+	color: #074DC6;
+	color: var(--cobalt);
+	font-weight: 600;
+	position: relative;
+	text-decoration: none;
+}
+
+a:hover, a:hover .icon, .project-card h3 span:hover {
+	color: #0097E9;
+	color: var(--azure);
+}
+
+.anim-underline:after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 0%;
+	border-bottom: 2px solid #0097E9;
+	transition: 0.4s;
+}
+
+.anim-underline:hover:after {
+	width: 100%;
+}
+
+p {
+	margin: 20px 0;
+}
+
+header {
+	background-color: #fff;
+	border-bottom: 3px solid;
+	border-color: #700090;
+	border-color: var(--deep-purple);
+	box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 8px 0 rgba(0,0,0,0.1);
+	opacity: 98%;
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	z-index: 1000;
+}
+
+header .content, footer .content {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0 2em;
+	margin: 0 auto;
+}
+
+img {
+	display: block;
+	margin: 0 auto;
+	max-width: 100%;
+}
+
+.bold {
+	font-weight: 600;
+}
+
+.name {
+	font-size: 30px;
+	margin: 20px 0;	
+}
+
+.name a, .name a:hover {
+	color: black;
+}
+
+.name a:after {
+	border: none;
+}
+
+nav {
+	font-size: 1em;
+}
+
+nav ul, footer .social-media ul {
+	margin: 0;
+	padding: 0;
+}
+
+nav li {
+	margin-left: 0.5em;
+}
+
+nav li, footer .social-media li { 
+	font-family: 'Montserrat', sans-serif;
+	text-transform: uppercase;
+	display: inline-block;
+	list-style-type: none;
+} 
+
+nav li a {
+	color: black;
+	display: inline-block;
+	font-weight: 400;
+	padding: 10px;
+}
+
+nav li a, .icon {
+	color: #700090;
+	color: var(--deep-purple);
+}
+
+footer .social-media li a {
+	font-size: 1.8em;
+	padding: 5px 8px;
+}
+
+.social-media .icon {
+	font-family: 'FontAwesome Brands';
+}
+
+a.anchor {
+	display: block;
+	position: relative;
+	top: -80px;
+	visibility: hidden;
+}
+
+.intro-contact .icon {
+	font-size: 1em;
+	padding-right: 0.5em;
+}
+
+nav li a:hover, footer .social-media li a:hover {
+	color: #0076E4;
+	color: var(--periwinkle);
+}
+
+.intro {
+	background-attachment: fixed;
+	background-color: #0097E9;
+	background-color: var(--azure);
+	background-position: center;
+	background-size: 600px, cover;
+	height: 70%;
+	min-height: 500px;
+}
+
+.intro .content {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+}
+
+.intro-blurb-container, .project-card {
+	background-color: #fff;
+	border-radius: 16px;
+	box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 8px 0 rgba(0,0,0,0.1);
+}
+
+.intro-blurb-container {
+	padding: 2em 3em;
+	width: 60%;
+}
+
+.intro-blurb-container p {
+	margin: 0.5em 0;
+}
+
+.intro-headline {
+	font-size: 1.8em;
+	font-weight: 600;
+	line-height: 1em;
+}
+
+.intro-contact {
+	margin-top: 1em;
+}
+
+.intro-contact p {
+	display: inline-block;
+	margin: 0;
+	padding-top: 3px;
+	vertical-align: top;
+}
+
+.intro-contact ul {
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+.intro-contact li {
+	margin-left: 1em;
+}
+
+.intro-contact a {
+	display: inline-block;
+	padding: 3px 10px;
+}
+
+.skills {
+	box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 8px 0 rgba(0,0,0,0.1);
+}
+
+.skills .icon {
+	font-family: 'FontAwesome Regular';
+}
+
+.skills, .work {
+	padding: 3em 0;
+}
+
+.skills h2, .work h2 {
+	margin: 0;
+}
+
+.work { 
+	background-color: #f2f2f2;
+	background-color: var(--light-grey);
+} 
+
+.skill-container {
+	margin-top: 2em;
+}
+
+.skill-container .skill-heading, .skill-container .skill-blurb {
+	display: inline-block;
+	vertical-align: top;
+}
+
+.skill-container .skill-heading {	
+	text-align: right;
+	width: 25%;
+}
+
+.skill-container h3 {
+	padding-right: 2em;
+}
+
+.skill-container .icon {
+	padding-right: 0.5em;
+}
+
+.skill-container .skill-blurb {
+	width: 75%;
+}
+
+.project-container {
+	margin: 3em auto 0 auto;
+	max-width: 800px;
+}
+
+.project-card {
+	padding: 2em;
+}
+
+.project-card:hover {
+	box-shadow: 0 2px 12px 0 rgba(0,0,0,0.24), 0 2px 16px 0 rgba(0,0,0,0.1);
+}
+
+.project-card img, .project-card .project-text {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.project-card img {
+	width: 33%;
+}
+
+.project-card .project-text {
+	width: 67%;
+}
+
+.project-card h3, .project-card p {
+	padding-left: 36px;
+}
+
+.project-card h3 {
+	margin-top: 0;
+}
+
+.project-card .description {
+	color: #000000;
+	color: black;
+	font-weight: 400;
+	text-decoration:none;
+}
+
+.project-card .more {
+	display: inline-block;
+}
+
+section .work-content {
+	padding: 1em;
+}
+
+.breadcrumb {
+	margin: 2em 0;
+}
+
+.breadcrumb a {
+	background-color: #00CCBE;
+	background-color: var(--periwinkle);
+	border-radius: 5px;
+	color: #FFFFFF;
+	color: white;
+	padding: 0.5em 1em;
+}
+
+.breadcrumb a:hover {
+	opacity: 0.8;
+}
+
+.date, .copyright {
+	font-size: 0.8em;
+	opacity: 0.6;
+}
+
+.img-caption {
+	font-size: 0.9em;
+	font-style: italic;
+	color: #666;
+	text-align: center;
+}
+
+img.max-width-400 {
+	max-width: 400px;
+}
+
+.col-2 {
+	margin: 0 auto;
+}
+
+.col-2 img {
+	display: inline-block;
+	margin: 2%;
+	max-width: 45%;
+}
+
+footer {
+	border-top: 3px solid;
+	border-top-color: #700090;
+	border-top-color: var(--deep-purple);
+	padding: 20px 0;
+}
+
+@media only screen and (max-width: 800px) {
+    .intro .content {
+    	justify-content: center;
+    }
+
+    .intro-blurb-container {
+		width: 70%;
+	}
+
+	.skill-container .skill-heading, .skill-container .skill-blurb {
+    	width: 100%;
+    }
+
+    .skill-container h3 {
+    	margin-bottom: 0;
+    	text-align: left;
+    }
+
+    .project-card {
+    	text-align: center;
+    }
+
+    .project-card img {
+    	margin: 0 auto;
+    	width: 100%;
+    	max-width: 360px;
+    }
+
+    .project-card .project-text {
+    	padding-top: 2em;
+    	width: 100%;
+    }
+
+    .project-card h3, .project-card p {
+    	padding: 0;
+    }
+}
+
+@media only screen and (max-width: 550px), screen and (max-height: 400px) {
+	body {
+		margin: 0;
+	}
+
+	header {
+		box-shadow: none;
+		position: static;
+	}
+}
+
+@media only screen and (max-width: 550px) {
+	body {
+		font-size: 16px;
+		margin: 0;
+	}
+
+	header .content, footer .content {
+		display: block;
+	}
+
+	.name, nav, .copyright, footer .social-media {
+		text-align: center;
+		width: 100%;
+	}
+
+	nav ul {
+		margin: 1em auto;
+		text-align: center;
+	}
+
+	nav li {
+		margin: 0 0.25em;
+	}
+
+	.col-2 img {
+		display: block;
+		margin: 1em auto;
+		max-width: 100%;
+	}
+
+	.intro {
+		padding: 2em 0;
+		height: auto;
+		min-height: 0;
+	}
+
+	.intro .content {
+		align-items: stretch;
+	}
+
+	.intro-blurb-container {
+		padding: 2em;
+		width: 100%;
+	}
+
+	footer .social-media {
+		margin: 1em 0;
+	}
+}
